@@ -9,14 +9,12 @@
 //     }
 //   }).mount('#app')
 
-
-const {createApp} = Vue
+const { createApp } = Vue
 
 createApp({
-    setup() {
-        const message = ("hello vue!")
-        return{
-            message
+    data() {
+        return {
+            message: 'Hello Vue!'
         }
     }
 }).mount('#app')
